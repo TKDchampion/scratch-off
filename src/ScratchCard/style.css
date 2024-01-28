@@ -1,0 +1,9 @@
+.scratch-main {
+  position: relative;
+}
+
+.scratch-card-1 {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
