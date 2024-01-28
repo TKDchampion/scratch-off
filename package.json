@@ -6,10 +6,7 @@
     "dev": "next dev -H 192.168.0.206",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint",
-    "homepage": "https://TKDchampion.github.io/scratch-off",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
+    "lint": "next lint"
   },
   "dependencies": {
     "react": "^18",
