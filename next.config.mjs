@@ -1,6 +1,6 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  // basePath: "/scratch-off",
+  basePath: "/scratch-off",
   output: "export", // <=== enables static exports
   reactStrictMode: true,
 };
