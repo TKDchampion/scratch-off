@@ -10,8 +10,7 @@ const Card: React.FC<Props> = () => {
 
   return (
     <div className="card">
-        <h2>Hello, World!</h2>
-        <p>This is a pretty card designed using CSS.</p>
+        <h2>1 號</h2>
     </div>
   );
 };
