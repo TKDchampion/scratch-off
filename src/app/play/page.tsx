@@ -1,6 +1,6 @@
 "use client";
 
-import ScratchCard from "@/ScratchCard";
+import ScratchCard from "@/components/ScratchCard";
 import { useEffect } from "react";
 
 export default function Play() {

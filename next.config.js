@@ -13,16 +13,16 @@
 const nextConfig = {
   output: "export",
   reactStrictMode: true,
-  async redirects() {
-    return [
-      // Basic redirect
-      {
-        source: "/",
-        destination: "/home",
-        permanent: true,
-      },
-    ];
-  },
+  // async redirects() {
+  //   return [
+  //     // Basic redirect
+  //     {
+  //       source: "/",
+  //       destination: "/home",
+  //       permanent: true,
+  //     },
+  //   ];
+  // },
 };
 
 module.exports = nextConfig;

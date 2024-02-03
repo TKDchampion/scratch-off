@@ -16,7 +16,12 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className={inter.className}>
+        <header className="pretty-header">
+          <h1>新年快樂遊戲</h1>
+        </header>
+        {children}
+      </body>
     </html>
   );
 }

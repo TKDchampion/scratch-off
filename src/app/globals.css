@@ -81,14 +81,74 @@
 
 html,
 body {
-  max-width: 100vw;
-  overflow-x: hidden;
-  touch-action: none;
+  /* display: flex;
+  align-items: center;
+  justify-content: center; */
+  height: 100vh;
+  margin: 0;
+  background-color: #2d4059; /* Deep Blue Background */
+  color: #ffffff; /* White Text */
+}
+
+h2 {
+  color: #f4f4f4; /* Light Gray Title */
+}
+
+p {
+  color: #b4ccbb; /* Light Green Text */
 }
 
 a {
   color: inherit;
   text-decoration: none;
+}
+
+.pretty-button {
+  background-color: #3498db; /* Blue Background */
+  color: #ffffff; /* White Text */
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.pretty-button:hover {
+  background-color: #2980b9; /* Darker Blue on Hover */
+}
+
+.pretty-header {
+  background-color: #2d4059; /* Deep Blue Background */
+  color: #ffffff; /* White Text */
+  padding: 20px;
+  text-align: center;
+}
+
+.pretty-header h1 {
+  margin: 0;
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline;
+  margin-right: 20px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #ffffff; /* White Text */
+  font-weight: bold;
+  font-size: 16px;
+  transition: color 0.3s ease;
+}
+
+nav a:hover {
+  color: #d9bf77; /* Mustard Text on Hover */
 }
 
 @media (prefers-color-scheme: dark) {
