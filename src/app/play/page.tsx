@@ -7,13 +7,13 @@ export default function Play() {
   const [selectedArray, setSelectedArray] = useState([]);
 
   useEffect(() => {
-    document.body.addEventListener(
-      "touchmove",
-      function (e) {
-        e.preventDefault();
-      },
-      { passive: false }
-    );
+    // document.body.addEventListener(
+    //   "touchmove",
+    //   function (e) {
+    //     e.preventDefault();
+    //   },
+    //   { passive: false }
+    // );
 
     const storageArray = JSON.parse(sessionStorage.getItem("select") as string);
     setSelectedArray(storageArray);

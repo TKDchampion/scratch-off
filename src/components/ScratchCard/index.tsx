@@ -16,6 +16,26 @@ const ScratchCard: React.FC<Props> = ({ clienY, item }) => {
     initialFgCanvas();
   }, []);
 
+  useEffect(() => {
+    const canvas = fgCanvasRef.current as any;
+
+    // Check if canvas is available
+    if (canvas) {
+      // Add touchmove event listener to the canvas
+      const handleTouchMove = (e: any) => {
+        e.preventDefault();
+        // Add your touchmove logic here if needed
+      };
+
+      canvas.addEventListener("touchmove", handleTouchMove, { passive: false });
+
+      // Cleanup the event listener when the component is unmounted
+      return () => {
+        canvas.removeEventListener("touchmove", handleTouchMove);
+      };
+    }
+  }, []);
+
   const initialBgCanvas = () => {
     const canvas = bgCanvasRef.current as any;
     const ctx = canvas.getContext("2d");

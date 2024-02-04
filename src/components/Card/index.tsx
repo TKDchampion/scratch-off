@@ -10,9 +10,7 @@ interface Props {
 const Card: React.FC<Props> = ({ number, item }) => {
   return (
     <div className={`card ${item.active ? "active" : ""}`}>
-      <h2>
-        {number} 號 {item.name}
-      </h2>
+      <h2>{number} 號</h2>
     </div>
   );
 };
