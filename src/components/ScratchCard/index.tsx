@@ -4,9 +4,10 @@ import "./style.css";
 
 interface Props {
   clienY: number;
+  item: any;
 }
 
-const ScratchCard: React.FC<Props> = ({ clienY }) => {
+const ScratchCard: React.FC<Props> = ({ clienY, item }) => {
   const bgCanvasRef = useRef(null);
   const fgCanvasRef = useRef(null);
 
@@ -19,14 +20,14 @@ const ScratchCard: React.FC<Props> = ({ clienY }) => {
     const canvas = bgCanvasRef.current as any;
     const ctx = canvas.getContext("2d");
     ctx.font = "30px Microsoft JhengHei, PMingLiU, sans-serif";
-    ctx.fillText("恭喜獲得信義區豪宅", 0, 90);
+    ctx.fillText(item.name, 20, 90);
   };
 
   const initialFgCanvas = () => {
     const canvas = fgCanvasRef.current as any;
     const ctx = canvas.getContext("2d");
     ctx.fillStyle = "silver";
-    ctx.fillRect(0, 0, 450, 380);
+    ctx.fillRect(0, 0, canvas.width, canvas.height);
   };
 
   const handleMousemove = (event: any) => {
@@ -36,8 +37,8 @@ const ScratchCard: React.FC<Props> = ({ clienY }) => {
     const ctx = canvas.getContext("2d");
     // const x = event.nativeEvent.offsetX;
     // const y = event.nativeEvent.offsetY;
-    const x = touch.pageX;
-    const y = touch.pageY - 80 - clienY;
+    const x = touch.pageX - 20;
+    const y = touch.pageY - 150 - clienY;
     ctx.beginPath();
     ctx.arc(x, y, 20, 0, Math.PI * 2);
     ctx.fill();

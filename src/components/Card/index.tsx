@@ -1,16 +1,18 @@
 "use client";
-import React, { useRef, useEffect } from "react";
+import React, { useRef, useEffect, useState } from "react";
 import "./style.css";
 
 interface Props {
-  // clienY: number;
+  number: number;
+  item: any;
 }
 
-const Card: React.FC<Props> = () => {
-
+const Card: React.FC<Props> = ({ number, item }) => {
   return (
-    <div className="card">
-        <h2>1 號</h2>
+    <div className={`card ${item.active ? "active" : ""}`}>
+      <h2>
+        {number} 號 {item.name}
+      </h2>
     </div>
   );
 };

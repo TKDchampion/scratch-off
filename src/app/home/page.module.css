@@ -1,7 +1,10 @@
 .home {
-    margin: 10px;
+  margin: 10px;
 }
 
 .contain {
-    margin: 20px;
+  margin: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }

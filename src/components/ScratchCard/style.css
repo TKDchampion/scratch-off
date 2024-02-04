@@ -1,9 +1,18 @@
 .scratch-main {
   position: relative;
+  background-color: #f5f5f5;
 }
 
 .scratch-card-1 {
   position: absolute;
   top: 0;
   left: 0;
+}
+
+canvas {
+  display: block; /* Make the canvas a block element */
+  width: 100%; /* Make the canvas width 100% of its container */
+  max-width: 400px;
+  height: 180px; /* Automatically adjust the height to maintain aspect ratio */
+  border: 1px solid #000; /* Adding a border for better visibility */
 }

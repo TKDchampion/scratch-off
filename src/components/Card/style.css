@@ -5,4 +5,21 @@
   padding: 20px;
   text-align: center;
   width: 300px;
+  margin: 10px;
+  cursor: pointer;
+}
+
+.card.active {
+  /* Active styles, add a more pronounced shadow and a different background color */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  background-color: #e0e0e0;
+
+  h2 {
+    color: #3498db;
+  }
+}
+
+.card:hover {
+  transform: scale(1.05); /* Increase size on hover */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add a subtle shadow on hover */
 }
